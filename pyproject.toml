@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "embedfast"
+version = "0.1.0"
+description = "Serves embedding"
+authors = ["cüre <curefat@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11,<3.13"
+fastapi = "^0.111.1"
+fastembed = "^0.3.4"
+gunicorn = "^22.0.0"
+uvicorn = {extras = ["standard"], version = "^0.30.3"}
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.4.2"
+isort = "^5.13.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
